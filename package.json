@@ -1,0 +1,25 @@
+{
+  "name": "react-native-orzhtml-listview",
+  "version": "1.0.0",
+  "description": "flatlist view",
+  "main": "index.js",
+  "scripts": {
+    "test": "flatlist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orzhtml/react-native-orzhtml-listview.git"
+  },
+  "keywords": [
+    "flatlist",
+    "listview",
+    "list",
+    "view"
+  ],
+  "author": "orzhtml",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orzhtml/react-native-orzhtml-listview/issues"
+  },
+  "homepage": "https://github.com/orzhtml/react-native-orzhtml-listview#readme"
+}
