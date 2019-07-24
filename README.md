@@ -2,6 +2,8 @@
 
 FlatList with pull-to-refresh and infinite scrolling for Android and iOS React-Native apps
 
+![](https://raw.githubusercontent.com/orzhtml/react-native-orzhtml-listview/master/1.gif)
+
 ## Install
 
 
