@@ -22,7 +22,7 @@ const PaginationStatus = {
 }
 
 class OrzhtmlListView extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.rows = []
     this.refreshing = true
@@ -33,11 +33,11 @@ class OrzhtmlListView extends React.Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.mounted = true
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     this.mounted = false
   }
 
@@ -341,7 +341,7 @@ class OrzhtmlListView extends React.Component {
 
   _keyExtractor = (item, index) => `RenderItemKey-${index}`
 
-  render() {
+  render () {
     const { keyIdx, numColumns } = this.props
     const { dataSource } = this.state
     return (

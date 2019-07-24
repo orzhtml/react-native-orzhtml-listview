@@ -1,7 +1,7 @@
 {
   "name": "react-native-orzhtml-listview",
   "version": "1.0.3",
-  "description": "FlatList view",
+  "description": "FlatList with pull-to-refresh and infinite scrolling for Android and iOS React-Native apps",
   "main": "index.js",
   "scripts": {
     "test": "flatlist"
@@ -28,11 +28,14 @@
   "devDependencies": {
     "babel-eslint": "^10.0.2",
     "babel-jest": "^24.8.0",
+    "es6-promise": "^4.2.8",
     "eslint": "^6.1.0",
-    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-native": "^3.7.0"
+    "eslint-plugin-react-native": "^3.7.0",
+    "eslint-plugin-standard": "^4.0.0"
   }
 }
