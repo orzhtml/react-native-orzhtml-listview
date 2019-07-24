@@ -1,3 +1,3 @@
-import OrzhtmlListView from './libs';
+import OrzhtmlListView from './libs'
 
-export default OrzhtmlListView;
+export default OrzhtmlListView

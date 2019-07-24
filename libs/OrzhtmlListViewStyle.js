@@ -2,7 +2,7 @@ import { Dimensions, StyleSheet } from 'react-native'
 
 const { width } = Dimensions.get('window')
 
-export default () => ({
+export default {
   fetchingView: {
     width,
     height: 55,
@@ -10,7 +10,6 @@ export default () => ({
     alignItems: 'center'
   },
   paginationView: {
-    flex: 0,
     width,
     height: 55,
     flexDirection: 'row',
@@ -73,4 +72,4 @@ export default () => ({
   ml5: {
     marginLeft: 5
   }
-})
+}

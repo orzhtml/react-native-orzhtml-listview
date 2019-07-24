@@ -1,7 +1,4 @@
-/**
- * 上拉下拉
- */
-import * as React from 'react'
+import React from 'react'
 import {
   ActivityIndicator,
   FlatList,
@@ -211,7 +208,7 @@ class OrzhtmlListView extends React.Component {
         return PaginationBtnView()
       }
       return (
-        <View style={[styles.fetchingView]}>
+        <View style={styles.fetchingView}>
           <Text style={styles.paginationViewText}>{paginationBtnText}</Text>
         </View>
       )
@@ -227,7 +224,7 @@ class OrzhtmlListView extends React.Component {
         return PaginationAllLoadedView()
       }
       return (
-        <View style={[styles.paginationView]}>
+        <View style={styles.paginationView}>
           <Text style={styles.allLoadedText}>{allLoadedText}</Text>
         </View>
       )
@@ -249,7 +246,7 @@ class OrzhtmlListView extends React.Component {
         return PaginationWaitingView()
       }
       return (
-        <View style={[styles.paginationView]}>
+        <View style={styles.paginationView}>
           <ActivityIndicator color={spinnerColor} size={waitingSpinnerSize} />
           <Text style={[styles.paginationViewText, styles.ml5]}>
             {waitingSpinnerText}
