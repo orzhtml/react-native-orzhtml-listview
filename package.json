@@ -1,6 +1,6 @@
 {
   "name": "react-native-orzhtml-listview",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "FlatList view",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,16 @@
   },
   "homepage": "https://github.com/orzhtml/react-native-orzhtml-listview#readme",
   "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-native": "^3.7.0"
   }
 }

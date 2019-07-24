@@ -1,13 +1,13 @@
-# listview
+# react-native-orzhtml-listview
 
-多封装一层的 FlatList view
+FlatList with pull-to-refresh and infinite scrolling for Android and iOS React-Native apps
 
 ## Install
 
 
 `npm install react-native-orzhtml-listview --save`
 
-or 
+or
 
 `yarn add react-native-orzhtml-listview`
 
