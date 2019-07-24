@@ -2,6 +2,12 @@
 
 多封装一层的 FlatList view
 
+# Install
+
+npm install react-native-orzhtml-listview --save 
+or 
+yarn add react-native-orzhtml-listview
+
 ## Props
 
 Prop | Description | Type | Required/Default
