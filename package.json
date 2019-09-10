@@ -1,6 +1,6 @@
 {
   "name": "react-native-orzhtml-listview",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "FlatList with pull-to-refresh and infinite scrolling for Android and iOS React-Native apps",
   "main": "index.js",
   "scripts": {

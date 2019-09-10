@@ -54,18 +54,24 @@ class OrzhtmlListView extends React.Component {
   /** 刷新处理数据 */
   postRefresh = (rows = []) => {
     const { notRefresh, initialNumToRender } = this.props
+    let paginationStatus = PaginationStatus.WAITING
+    let mergedRows = []
+    let isRefresh = false
     if (this.mounted) {
-      let paginationStatus = PaginationStatus.WAITING
-      let mergedRows = []
       if (notRefresh) {
         mergedRows = rows
+        isRefresh = true
       } else {
         mergedRows = rows.concat(this.getRows())
       }
       if (rows.length < initialNumToRender) {
         paginationStatus = PaginationStatus.ALL_LOADED
       }
-      this.updateRows(mergedRows, paginationStatus)
+      this.updateRows({
+        rows: mergedRows,
+        paginationStatus,
+        isRefresh
+      })
     }
   }
 
@@ -108,17 +114,20 @@ class OrzhtmlListView extends React.Component {
       paginationStatus = PaginationStatus.WAITING
     }
     this.loadingMore = false
-    this.updateRows(mergedRows, paginationStatus)
+    this.updateRows({
+      rows: mergedRows,
+      paginationStatus
+    })
   }
 
   /** 更新数据 */
-  updateRows = (rows, paginationStatus) => {
+  updateRows = ({ rows, paginationStatus, isRefresh }) => {
     const { setRefreshing } = this.props
     let mergedRows = rows
     if (rows.length) {
       this.setRows(rows)
     } else {
-      mergedRows = this.getRows().slice()
+      mergedRows = isRefresh ? rows : this.getRows().slice()
     }
     setRefreshing && setRefreshing(false)
     this.setState({
