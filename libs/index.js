@@ -296,6 +296,10 @@ class OrzhtmlListView extends React.Component {
     ) {
       return this.PaginationAllLoadedView()
     }
+    // 再次加载数据为空
+    if (paginationStatus === PaginationStatus.NO_DATA) {
+      return this._ListEmptyComponent()
+    }
     return null
   }
 
