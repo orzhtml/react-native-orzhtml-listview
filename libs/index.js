@@ -366,7 +366,7 @@ class OrzhtmlListView extends React.Component {
           this._flatList = ref
         }}
         data={dataSource}
-        ListEmptyComponent={this._ListEmptyComponent}
+        ListEmptyComponent={null}
         ListFooterComponent={this._ListFooterComponent}
         ListHeaderComponent={this._ListHeaderComponent}
         onEndReached={this.onEndReached}
