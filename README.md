@@ -1,6 +1,8 @@
 # react-native-orzhtml-listview
 
-FlatList with pull-to-refresh and infinite scrolling for Android and iOS React-Native apps
+FlatList with pull-to-refresh and infinite scrolling for Android and iOS React-Native apps.
+
+基于FlatList的上拉、下拉刷新组件。
 
 ![](https://raw.githubusercontent.com/orzhtml/react-native-orzhtml-listview/master/1.gif)
 
