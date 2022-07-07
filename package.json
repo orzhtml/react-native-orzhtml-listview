@@ -17,7 +17,7 @@
     "view"
   ],
   "author": "orzhtml",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/orzhtml/react-native-orzhtml-listview/issues"
   },
