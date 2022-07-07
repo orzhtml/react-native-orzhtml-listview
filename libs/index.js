@@ -105,13 +105,14 @@ class OrzhtmlListView extends React.Component {
 
   /** 下一页 */
   postPaginate = (rows = []) => {
+    const { initialNumToRender } = this.props
     let mergedRows = []
     let paginationStatus
     if (rows.length === 0) {
       paginationStatus = PaginationStatus.ALL_LOADED
     } else {
       mergedRows = this.getRows().concat(rows)
-      paginationStatus = PaginationStatus.WAITING
+      paginationStatus = rows.length < initialNumToRender ? PaginationStatus.ALL_LOADED : PaginationStatus.WAITING
     }
     this.loadingMore = false
     this.updateRows({
