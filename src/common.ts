@@ -42,6 +42,7 @@ export interface OrzhtmlListProps {
     setEndReached?: (postPaginate: (rows: any[]) => void, endFetch: () => void) => void,
     noRefresh?: boolean,
     // Custom View
+    ItemSeparatorComponent?: React.ComponentType<any> | null,
     renderItem: ListRenderItem<any> | null | undefined,
     PaginationBtnView?: React.ComponentType<any> | React.ReactElement | null,
     PaginationFetchingView?: React.ComponentType<any> | React.ReactElement | null,

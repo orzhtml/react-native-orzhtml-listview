@@ -76,6 +76,7 @@ const App = (): JSX.Element => {
           renderItem={_renderItem}
           setRefresh={_setRefresh}
           setEndReached={_setEndReached}
+          ItemSeparatorComponent={null}
         />
       </SafeAreaView>
     </SafeAreaProvider>
