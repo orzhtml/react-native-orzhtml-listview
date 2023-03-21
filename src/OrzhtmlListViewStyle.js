@@ -2,7 +2,7 @@ import { Dimensions, StyleSheet } from 'react-native'
 
 const { width } = Dimensions.get('window')
 
-export default {
+export default StyleSheet.create({
   fetchingView: {
     width,
     height: 55,
@@ -72,4 +72,4 @@ export default {
   ml5: {
     marginLeft: 5
   }
-}
+})

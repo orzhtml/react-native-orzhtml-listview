@@ -25,12 +25,12 @@ Prop | Description | Type | Required/Default
 `setRefreshing`|刷新状态回调方法|`func`|`null`
 `setRefresh`|刷新方法|`func`|`null`
 `setEndReached`|加载更多方法|`func`|`null`
-`notRefresh`|下拉是否是刷新|`bool`|`false`
+`noRefresh`|下拉是否是刷新|`bool`|`false`
 `renderItem`|渲染项目|`func`|`null`
 `PaginationBtnView`|分页按钮视图|`func`|`null`
-`paginationFetchingView`|分页拖动视图|`func`| `null`
-`paginationAllLoadedView`|分页加载完成视图|`func`|`null`
-`paginationWaitingView`|分页加载中视图|`func`|`null`
+`PaginationFetchingView`|分页拖动视图|`func`| `null`
+`PaginationAllLoadedView`|分页加载完成视图|`func`|`null`
+`PaginationWaitingView`|分页加载中视图|`func`|`null`
 `EmptyView`|空内容视图|`func`|`null`
 `HeaderView`|头部视图|`func`|`null`
 `refreshableTitle`|可刷新的标题|`string`|`null`
@@ -45,5 +45,17 @@ Prop | Description | Type | Required/Default
 `waitingSpinnerSize`|等待加载动画的大小|`string`|`small`
 `waitingSpinnerText`|等待加载的文案|`string`|`Loading...`
 `paginationBtnText`|分页按钮文案|`string`|`Load more...`
-`EmptyViewText`|空视图的文案|`string`|`抱歉没有数据`
+`emptyViewText`|空视图的文案|`string`|`Sorry no data`
 
+## handle ref
+
+method | description
+------ | ----------
+`firstAddData` | 第一次数据加载
+`updateDataSource` | 手动更新数据
+`refresh` | 手动刷新
+`getRows` | 获取已存的所有数据
+`scrollToEnd` | 滚动到底部: 参考 FlatList scrollToEnd
+`scrollToIndex` | 将位于指定位置的元素滚动到可视区的指定位置: 参考 FlatList scrollToIndex
+`scrollToItem` | 这个方法会顺序遍历元素。尽可能使用 scrollToIndex 代替: 参考 FlatList scrollToItem
+`scrollToOffset` | 滚动列表到指定的偏移（以像素为单位），等同于 ScrollView 的 scrollTo 方法: 参考 FlatList scrollToOffset
